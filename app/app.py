@@ -15,7 +15,10 @@ class Index:
 
 class Bienvenida:
     def GET(self):
-        return render.bienvenida()
+        num = 10
+        num2 = 15
+        suma = num + num2
+        return render.bienvenida(suma)
 
 if __name__ == "__main__":
     app.run()
